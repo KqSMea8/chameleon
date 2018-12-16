@@ -32,6 +32,10 @@ img{
   zoom: 1; 
 }
 
+a{
+  text-decoration: none;
+}
+
 .tc{
   text-align: center;
 }

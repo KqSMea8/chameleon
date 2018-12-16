@@ -3,17 +3,13 @@ module.exports = function (grunt) {
   'use strict';
   grunt.initConfig({
         pkg: grunt.file.readJSON("package.json"),
-        filerev:{
-            // options:{
-            //     algorithm: 'md5',
-            //     length: 8
-            // },
-            payment: {
-                files: [{
-                    src: ["./build/js/*","./build/css/*"],
-                }]
-            }
-        },
+        // filerev:{
+        //     payment: {
+        //         files: [{
+        //             src: ["./build/js/*","./build/css/*"],
+        //         }]
+        //     }
+        // },
         //压缩css
         cssmin: { 
           payment: {
@@ -45,7 +41,7 @@ module.exports = function (grunt) {
         watch:{
             build:{
                 files:['./js/*.js','./css/*.css'],
-                tasks:['cssmin','uglify','filerev'],
+                tasks:['cssmin','uglify'],
                 options:{spawn:false}
             }
         }
@@ -53,7 +49,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks("grunt-contrib-uglify");
     grunt.loadNpmTasks("grunt-contrib-cssmin");
     grunt.loadNpmTasks("grunt-contrib-watch");
-    grunt.loadNpmTasks("grunt-filerev");
+    // grunt.loadNpmTasks("grunt-filerev");
 
-    grunt.registerTask("default",["cssmin","uglify","filerev","watch"]);
+    grunt.registerTask("default",["cssmin","uglify","watch"]);
 };
