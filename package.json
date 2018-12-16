@@ -1,20 +1,18 @@
 {
   "name": "chameleon",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "gitbook serve",
-    "build": "gitbook build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@git.xiaojukeji.com:docs/chameleon.git"
-  },
-  "author": "chameleon",
-  "license": "ISC",
-  "dependencies": {
-    "gitbook-plugin-insert-logo": "^0.1.5"
+  "version": "0.0.1",
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-connect": "^2.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-csslint": "^2.0.0",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-jshint": "^2.0.0",
+    "grunt-contrib-less": "^2.0.0",
+    "grunt-contrib-uglify": "^4.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-filerev": "^2.3.1",
+    "grunt-usemin": "^3.1.1"
   }
 }

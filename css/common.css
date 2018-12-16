@@ -1,0 +1,42 @@
+@charset "UTF-8";
+*{;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+
+html,body{
+    padding: 0px;
+    margin:0px;
+    height: 100%;
+    width: 100%;
+}
+
+ul,li,dl,dt,dd,p{
+    list-style: none;
+    margin: 0px;
+    padding:0px;
+}
+
+img{
+    margin: 0px;
+    padding: 0px;
+}
+
+.clearfix:after{
+  content: ""; 
+  display: block; 
+  height: 0; 
+  clear: both; 
+  visibility: hidden;  
+  }
+
+.clearfix {
+  /* 触发 hasLayout */ 
+  zoom: 1; 
+}
+
+.tc{
+  text-align: center;
+}
+
+.main{
+  width:1024px;
+  margin: 0px auto;
+}
