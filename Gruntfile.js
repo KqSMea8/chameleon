@@ -3,13 +3,13 @@ module.exports = function (grunt) {
   'use strict';
   grunt.initConfig({
         pkg: grunt.file.readJSON("package.json"),
-        filerev:{
-            payment: {
-                files: [{
-                    src: ["./build/js/*","./build/css/*"],
-                }]
-            }
-        },
+        // filerev:{
+        //     payment: {
+        //         files: [{
+        //             src: ["./build/js/*","./build/css/*"],
+        //         }]
+        //     }
+        // },
         //压缩css
         cssmin: { 
           payment: {
@@ -49,8 +49,8 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks("grunt-contrib-uglify");
     grunt.loadNpmTasks("grunt-contrib-cssmin");
     grunt.loadNpmTasks("grunt-contrib-watch");
-    grunt.loadNpmTasks("grunt-filerev");
+    // grunt.loadNpmTasks("grunt-filerev");
     // grunt.loadNpmTasks("ggrunt-usemin");
 
-    grunt.registerTask("default",["cssmin","uglify","filerev","watch"]);
+    grunt.registerTask("default",["cssmin","uglify","watch"]);
 };

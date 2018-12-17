@@ -96,6 +96,16 @@
     margin: 0px auto;
 }
 
+.introduce-list-img{
+    width: 100px;
+    margin: 0px auto 20px;
+}
+
+.introduce-list-img img{
+    display: block;
+    width: 100%;
+}
+
 .title{
     font-size: 24px;
     color: #474D66;
