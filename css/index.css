@@ -148,8 +148,16 @@
     margin: 110px auto 0px;
 }
 
-.platform-bottom img{
-    width: 100%;
+.platform-bottom p{
+    text-align: center;
+    font-size: 24px;
+    color: #474D66;
+    margin-bottom:60px; 
+}
+
+.platform-bottom ul li{
+    float: left;
+    margin: 0px 25px 70px;
 }
 
 .bottom{
